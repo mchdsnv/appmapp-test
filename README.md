@@ -1,74 +1,68 @@
-# ![Node/Express/Prisma Example App](project-logo.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)
+## Available Scripts
 
-> ### Example Node (Express + Prisma) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
+In the project directory, you can run:
 
-<a href="https://thinkster.io/tutorials/node-json-api" target="_blank"><img width="454" src="https://raw.githubusercontent.com/gothinkster/realworld/master/media/learn-btn-hr.png" /></a>
+### `yarn start`
 
-## Getting Started
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Prerequisites
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Run the following command to install dependencies:
+### `yarn test`
 
-```shell
-npm install
-```
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Environment variables
+### `yarn build`
 
-This project depends on some environment variables.
-If you are running this project locally, create a `.env` file at the root for these variables.
-Your host provider should included a feature to set them there directly to avoid exposing them.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Here are the required ones:
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-```
-DATABASE_URL=
-JWT_SECRET=
-NODE_ENV=production
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Generate your Prisma client
+### `yarn eject`
 
-Run the following command to generate the Prisma Client which will include types based on your database schema:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```shell
-npx prisma generate
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Apply any SQL migration script
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Run the following command to create/update your database based on existing sql migration scripts:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-```shell
-npx prisma migrate deploy
-```
+## Learn More
 
-### Run the project
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Run the following command to run the project:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```shell
-npx nx serve api
-```
+### Code Splitting
 
-### Seed the database
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-The project includes a seed script to populate the database:
+### Analyzing the Bundle Size
 
-```shell
-npx prisma db seed
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## Deploy on a remote server
+### Making a Progressive Web App
 
-Run the following command to:
-- install dependencies
-- apply any new migration sql scripts
-- run the server
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-```shell
-npm ci && npx prisma migrate deploy && node dist/api/main.js
-```
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
